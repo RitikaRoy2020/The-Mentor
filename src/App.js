@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Navigation from './components/Navigation';
-import Landingpage from './components/landingpage/Landingpage';
+import Landingpage from './components/landingpage';
 import Footer from './components/Footer';
 
 import {
@@ -11,6 +11,7 @@ import {
   Link,
   Switch
 } from 'react-router-dom';
+import SignupPage from './components/signup';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <React.Fragment>
         <Switch>
           <Route path = "/" exact component={Landingpage}></Route>
+          <Route path = "/signup" component={SignupPage}></Route>
         </Switch>
       </React.Fragment>
       <Footer />

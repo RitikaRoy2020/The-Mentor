@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function About() {
+export const About = (props) => {
   return (
     <div>
       <section id="about" class="about">
@@ -14,18 +14,17 @@ export default function About() {
               <img src="assets/img/about.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <h3>{props.content.Heading}</h3>
               <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                {props.content.Body1}
               </p>
               <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="icofont-check-circled"></i> {props.content.Body3}</li>
+                <li><i class="icofont-check-circled"></i> {props.content.Body4}</li>
+                <li><i class="icofont-check-circled"></i> {props.content.Body5}</li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                {props.content.Body2}
               </p>
               <a href="about.html" class="learn-more-btn">Learn More</a>
             </div>
